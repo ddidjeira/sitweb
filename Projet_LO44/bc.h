@@ -65,7 +65,7 @@ BOOL vide (regle R);
 //cette fonction permet d'accéder à la conclusion d'une règle. On accède à une conlusion si la regle existe,si la conclusion existe et si elle à une premisse.Pas de premisse, pas de conclusion.
 char *conclusion (regle R);
 
-//cette fonction permet d'acceder à la proposition en tête d'une premisse
+//cette fonction permet d'acceder à la tête d'une premisse
 regle tete (regle R);
 
 // Fonction permettant de renvoyer le reste d'une règle pour les fonctions reccurssives
@@ -106,4 +106,8 @@ BF MI (BC base, BF faits);
 
 // Cette conftion permet de créer une base de connaissance prédéfinie
 BC initialiserbase(BC base);
+
+//Acc�der à la règle se trouvant en tete de la base
+regle regle_tete(BC base);
+char * valeur_prop_tete(regle R);
 #endif

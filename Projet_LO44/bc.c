@@ -142,6 +142,16 @@ char * conclusion (regle R)
   return I->valeur;
 }
 
+char * valeur_prop_tete(regle R)
+{
+  return R->valeur;
+}
+
+regle regle_tete(BC base)
+{
+  return base->rule;
+}
+
 regle tete (regle R)
 {
   return R;
@@ -423,19 +433,19 @@ BC initialiserbase(BC base)
 {
   regle L;
   L = creerR ();
-  L = ajouterPRO (L, "a");
-  L = ajouterPRO (L, "b");
-  L = ajouterPRO (L, "c");
+  L = ajouterPRO (L, "raterCOURS");
+  L = ajouterPRO (L, "raterTD");
+  L = ajouterPRO (L, "raterMEDIAN");
   base = ajouterR (base, L);
   L = creerR (); 
-  L = ajouterPRO (L, "c");
-  L = ajouterPRO (L, "d");
-  L = ajouterPRO (L, "e");
+  L = ajouterPRO (L, "raterMEDIAN");
+  L = ajouterPRO (L, "raterTP");
+  L = ajouterPRO (L, "raterPROJET");
   base = ajouterR (base, L);
   L = creerR (); 
-  L = ajouterPRO (L, "t");
-  L = ajouterPRO (L, "z");
-  L = ajouterPRO (L, "b");
+  L = ajouterPRO (L, "raterFINAL");
+  L = ajouterPRO (L, "raterPROJET");
+  L = ajouterPRO (L, "raterUV");
   base = ajouterR (base, L);
   return base;
 }
