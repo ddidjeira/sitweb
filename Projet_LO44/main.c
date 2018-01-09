@@ -217,7 +217,7 @@ int main ()
       {
 	system ("clear");
 	base=initialiserbase(base);
-        printf("\n\nLe programme est sensible �|  la casse. Merci aussi d'éviter les caractères spéciaux les espaces\n\n");
+        printf("\n\nLe programme est sensible à la casse. Merci aussi d'éviter les caractères spéciaux les espaces\n\n");
         printf ("                             BASE DE CONNAISSANCES\n");
 	afficherbase (base);
 	printf ("    	                      AJOUT DES FAITS\n");
